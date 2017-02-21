@@ -9,7 +9,6 @@ $(function() {
 
     		var completed = response.courses.completed;
     		$.each(completed, function(index, item) {
-    			console.log(item);
     			$("#badges ").append(
     				"<div class='course'>" + 
     					"<h3>" + item.title + "</h3>" +
@@ -19,8 +18,7 @@ $(function() {
     			);
 
 			});
-
-    		//console.log(response.courses.completed);
+			
   		}
 	});
 
